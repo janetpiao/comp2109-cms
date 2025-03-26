@@ -14,6 +14,7 @@
         <div class="fourth-widget">
             <?php dynamic_sidebar('footer-widget-area-four'); ?>
         </div>
+    </section>
 </footer>
 </body>
 

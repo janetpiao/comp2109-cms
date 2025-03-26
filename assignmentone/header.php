@@ -5,13 +5,16 @@
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php wp_head(); ?>
+    <!-- add our CSS -->
+    <link rel="stylesheet" href="<?php echo esc_url(home_url('wp-content/themes/assignmentone/style.css')); ?>">
 </head>
+
 
 <body <?php body_class(); ?>>
     <header class="default-header">
         <div>
-            <a href="<?php echo esc_url(hpme_url()); ?>">
-                <img src="<?php echo esc_url(home_url('wp-content/uploads/2025/03/logo.png'))?>" alt="header logo"></a>
+            <a href="<?php echo esc_url(home_url()); ?>">
+                <img src="<?php echo esc_url(home_url('wp-content/uploads/2025/02/logo.png'))?>" alt="header logo"></a>
         </div>
         <nav>
             <?php 

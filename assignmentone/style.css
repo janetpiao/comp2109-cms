@@ -1,9 +1,16 @@
 /* 
-Theme Name: Assignment one Theme Creation
+Theme Name: Assignment One Theme
 Author: Jingyao Piao
-Description: This is our Assignment one
+Description: This is my Assignment one
 Requires at least: 5.9 (version of WordPress)
 Tested up to: 6.4
 Requires PHP: 5.6
 Version: 1.00
 */
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  padding: 90px 50px 0px 50px;
+  display: block;
+}

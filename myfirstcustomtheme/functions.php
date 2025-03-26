@@ -73,6 +73,32 @@ function cms_plugin_init(){
     register_post_type('cmsPost', $args);
 }
 add_action('init', 'cms_plugin_init');
+
+// // Custom Plugin
+// function retro_game_init() {
+//   $args = array(
+//     'label' => 'Retro Games',
+//     'public' => true,
+//     'show_ui' => true,
+//     'capability_type' => 'post',
+//     'taxonomies' => array('category'),
+//     'hierarchical' => false,
+//     'query_var' => true,
+//     'menu_icon' => 'dashicons-album',
+//     'supports' => array(
+//       'title',
+//       'editor',
+//       'excerpts',
+//       'trackbacks',
+//       'comments',
+//       'thumbnail',
+//       'author',
+//       'post-formats',
+//       'page-attributes',
+//     )
+//   );
+// }
+
 // build our shortcode for our CMS post type
 function cms_post_shortcode(){
     $query = new WP_Query(array('post_type' => 'cmsPost', 'post_per_page' => 8, 'order' => 'asc'));

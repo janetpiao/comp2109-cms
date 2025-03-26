@@ -1,14 +1,14 @@
 <?php
 /**
- * Template Name: Assignment one Theme Creation
+ * Template Name: Assignment One Post Template
  * Template Post Type: post
  */
 get_header();
 $featuredImg = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full');
-
 ?>
 <section class="post-main-content">
-    <div style="background-image: url('<?php  echo $featuredImg[0];?>');">
+    <div class="post-featured-image">
+        <img src="<?php echo esc_url($featuredImg[0]); ?>" alt="<?php the_title_attribute(); ?>">
     </div>
     <div>
         <h1><?php the_title(); ?></h1>

@@ -15,6 +15,7 @@
             <?php dynamic_sidebar('footer-widget-area-four'); ?>
         </div>
 </footer>
+<?php wp_footer(); ?>
 </body>
 
 </html>
