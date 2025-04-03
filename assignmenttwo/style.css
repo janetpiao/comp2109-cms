@@ -1,0 +1,84 @@
+/* 
+Theme Name: Assignment One Theme
+Author: Jingyao Piao
+Description: This is my Assignment one
+Requires at least: 5.9 (version of WordPress)
+Tested up to: 6.4
+Requires PHP: 5.6
+Version: 1.00
+*/
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  padding: 90px 50px 0px 50px;
+  display: block;
+}
+/* Style header */
+
+.default-header {
+  width: 100%;
+  height: 120px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+header {
+  background-color: white;
+  z-index: 1000;
+}
+
+header > div,
+.menu-assignment2-container {
+  margin: 40px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px 15px;
+  display: block;
+  transition: background-color 0.3s;
+}
+
+.logo img {
+  width: 80px;
+  height: 80px;
+}
+
+footer {
+  width: 100%;
+  padding: 20px;
+}
+
+/* Hide the sidebar */
+#sidebar,
+.sidebar {
+  display: none;
+}
+
+.homepage-content {
+  /* width: 100%; */
+  /* margin: 0 auto; */
+  display: flex;
+  flex-direction: column;
+  /* gap: 20px; */
+  /* background-color: aquamarine; */
+}
+.woocommerce-MyAccount-navigation ul {
+  flex-direction: column;
+}
