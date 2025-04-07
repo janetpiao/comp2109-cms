@@ -13,7 +13,7 @@ add_action('after_setup_theme', 'mytheme_theme_setup');
 add_theme_support('post-thumbnails');
 
 // Set up our footer widgets
-function assignone_widgets_init(){
+function majorproject_widgets_init(){
     register_sidebar(array(
         'name'          => __('Footer Widget Area One', 'cmsclass'),
         'id'            => 'footer-widget-area-one',
@@ -30,26 +30,8 @@ function assignone_widgets_init(){
         'before_title'  => '<h4 class="widget-title">',
         'after_title'   => '</h4>',
     ));
-    register_sidebar(array(
-        'name'          => __('Footer Widget Area Three', 'cmsclass'),
-        'id'            => 'footer-widget-area-three',
-        'description'   => __('The third footer widget area', 'cmsclass'),
-        'before_widget' => '<div class="menu-widget">',
-        'after_widget'  => '</div>',
-        'before_title'  => '<h4 class="widget-title">',
-        'after_title'   => '</h4>',
-    ));
-    register_sidebar(array(
-        'name'          => __('Footer Widget Area Four', 'cmsclass'),
-        'id'            => 'footer-widget-area-four',
-        'description'   => __('The fourth footer widget area', 'cmsclass'),
-        'before_widget' => '<div class="contact-widget">',
-        'after_widget'  => '</div>',
-        'before_title'  => '<h4 class="widget-title">',
-        'after_title'   => '</h4>',
-    ));
 }
-add_action('widgets_init', 'assignone_widgets_init');
+add_action('widgets_init', 'majorproject_widgets_init');
 
 // custom plugin
 function cms_plugin_init(){
