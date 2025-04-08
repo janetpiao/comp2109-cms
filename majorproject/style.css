@@ -1,7 +1,7 @@
 /* 
 Theme Name: Major Project Theme
 Author: Jingyao Piao and Susan Soto Sarmiento
-Description: This is our major project for content management system. It is a beauty e-commerce website.
+Description: This is our major project for content management system. It is a perfume e-commerce website.
 Requires at least: 5.9 (version of WordPress)
 Tested up to: 6.4
 Requires PHP: 5.6
@@ -59,11 +59,6 @@ nav ul li a {
   height: 28px;
 }
 
-footer {
-  width: 100%;
-  padding: 20px;
-}
-
 /* Hide the sidebar */
 #sidebar,
 .sidebar {
@@ -83,8 +78,69 @@ footer {
 }
 
 /* Style home page template */
-
 .home-masthead {
   width: 100%;
   height: 300px;
+  display: flex;
+  /* Horizontal center */
+  justify-content: center;
+  /* Vertical center */
+  align-items: center;
+  border-radius: 24px;
+}
+
+.home-masthead div h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.home-row-one h3 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 60px;
+  margin-bottom: 0;
+}
+
+.home-row-one p {
+  margin-top: 10px;
+  margin-bottom: 80px;
+}
+
+.shortcode {
+  margin-bottom: 30px;
+}
+
+/*  Style default page template */
+
+.default-masthead {
+  width: 100%;
+  height: 260px;
+  display: flex;
+  /* Horizontal center */
+  justify-content: center;
+  /* Vertical center */
+  align-items: center;
+  border-radius: 24px;
+}
+
+.default-masthead div h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* Style post template */
+.post-featured-image img {
+  height: 160px;
+  border-radius: 24px;
+}
+
+/* Style footer */
+footer {
+  font-size: 0.8rem;
+  color: #999;
 }
