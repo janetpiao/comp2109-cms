@@ -1,7 +1,7 @@
-/* 
+/*
 Theme Name: Major Project Theme
 Author: Jingyao Piao and Susan Soto Sarmiento
-Description: This is our major project for content management system. It is a perfume e-commerce website.
+Description: This is our major project for content management system. It is a beauty e-commerce website.
 Requires at least: 5.9 (version of WordPress)
 Tested up to: 6.4
 Requires PHP: 5.6
@@ -11,9 +11,11 @@ Version: 1.00
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
-  padding: 90px 50px 0px 50px;
+  padding: 140px 20px 0px 20px;
   display: block;
+  margin: 0;
 }
+
 /* Style header */
 
 .default-header {
@@ -25,7 +27,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  padding: 0 40px;
 }
 
 header {
@@ -38,11 +40,19 @@ header > div,
   margin: 40px;
 }
 
+/* Navigation styles */
+nav {
+  display: flex;
+  align-items: center;
+}
+
 nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
-  margin: 10px;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
 }
 
 nav ul li a {
@@ -50,13 +60,59 @@ nav ul li a {
   color: #333;
   font-size: 15px;
   font-weight: bold;
-  padding: 10px 15px;
+  padding: 10px 12px;
+  border-radius: 4px;
   display: block;
   transition: background-color 0.3s;
 }
 
+nav ul li a:hover {
+  background-color: #f1f1f1;
+  color: #000;
+}
+
+/* Style the logo */
 .logo img {
-  height: 28px;
+  height: 50px;
+  max-width: 100%;
+}
+
+/* footer */
+footer {
+  width: 100%;
+  padding: 20px;
+  background-color: #fafafa;
+  padding: 40px 20px;
+  border-top: 1px solid #eee;
+  margin-top: 60px;
+  font-size: 14px;
+}
+
+.top-footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+}
+
+footer .top-footer div {
+  padding: 10px;
+}
+
+footer h3,
+footer h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+footer p,
+footer a {
+  color: #666;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #000;
 }
 
 /* Hide the sidebar */
@@ -78,69 +134,54 @@ nav ul li a {
 }
 
 /* Style home page template */
+
 .home-masthead {
   width: 100%;
   height: 300px;
+  background-size: cover;
+  background-position: center;
   display: flex;
-  /* Horizontal center */
   justify-content: center;
-  /* Vertical center */
   align-items: center;
-  border-radius: 24px;
-}
-
-.home-masthead div h1 {
+  color: white;
   text-align: center;
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #ffffff;
+  padding: 20px;
 }
 
-.home-row-one h3 {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 2rem;
-  font-weight: 600;
-  margin-top: 60px;
-  margin-bottom: 0;
+.home-masthead h1 {
+  font-size: 36px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 8px;
 }
 
-.home-row-one p {
-  margin-top: 10px;
-  margin-bottom: 80px;
+.home-masthead h1 {
+  font-size: 36px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 8px;
 }
 
-.shortcode {
-  margin-bottom: 30px;
-}
-
-/*  Style default page template */
-
-.default-masthead {
-  width: 100%;
-  height: 260px;
+/* Style the post page */
+.post-main-content {
   display: flex;
-  /* Horizontal center */
-  justify-content: center;
-  /* Vertical center */
+  flex-direction: column;
   align-items: center;
-  border-radius: 24px;
+  padding: 40px 20px;
 }
 
-.default-masthead div h1 {
-  text-align: center;
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #ffffff;
-}
-
-/* Style post template */
 .post-featured-image img {
-  height: 160px;
-  border-radius: 24px;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
 }
 
-/* Style footer */
-footer {
-  font-size: 0.8rem;
-  color: #999;
+.post-main-content h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.post-main-content p {
+  max-width: 700px;
+  text-align: justify;
 }
